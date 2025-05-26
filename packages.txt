@@ -1,0 +1,9 @@
+git
+stow
+gnome-shell-extension-manager
+pipx
+zsh
+curl
+fzf
+ripgrep
+build-essential
