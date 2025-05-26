@@ -6,3 +6,4 @@ vlc
 ghostty
 nvim
 yazi
+chromium
