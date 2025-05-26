@@ -40,3 +40,7 @@ dconf load /org/gnome/ < org.gnome.dconf
 # Install snaps
 readarray -t snaps < snaps.txt
 sudo snap install "${snaps[@]}"
+
+# Set ghostty as default
+sudo update-alternatives --install /usr/bin/x-terminal-emulator x-terminal-emulator /snap/ghostty/current/bin/ghostty 50
+sudo update-alternatives --set x-terminal-emulator /snap/ghostty/current/bin/ghostty
