@@ -8,3 +8,4 @@ fzf
 ripgrep
 build-essential
 vlc
+ca-certificates
