@@ -7,3 +7,4 @@ curl
 fzf
 ripgrep
 build-essential
+vlc

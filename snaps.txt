@@ -2,7 +2,6 @@ code
 discord
 gimp
 spotify
-vlc
 ghostty
 nvim
 yazi
