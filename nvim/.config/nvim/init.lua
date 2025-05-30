@@ -29,30 +29,10 @@ vim.g.maplocalleader = "\\"
 
 -- Setup lazy.nvim
 require("lazy").setup({
-  spec = {
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
-    {
-      'nvim-telescope/telescope.nvim', tag = '0.1.8',
-      dependencies = { 'nvim-lua/plenary.nvim' }
-    },
-    { "nvim-treesitter/nvim-treesitter", branch = 'master', lazy = false, build = ":TSUpdate" },
-    -- add your plugins here
-  },
+  spec = { import = "plugins" },
   -- Configure any other settings here. See the documentation for more details.
   -- colorscheme that will be used when installing plugins.
   install = { colorscheme = { "habamax" } },
   -- automatically check for plugin updates
   checker = { enabled = true, notify = false },
-})
-
-vim.cmd.colorscheme "catppuccin"
-
-local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<C-p>', builtin.find_files, { desc = 'Telescope find files' })
-vim.keymap.set('n', '<C-S-f>', builtin.live_grep, { desc = 'Telescope live grep' })
-
-require('nvim-treesitter.configs').setup({
-  ensure_installed = { "lua", "bash" },
-  highlight = { enable = true },
-  indent = { enable = true },
 })
