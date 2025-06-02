@@ -9,3 +9,4 @@ ripgrep
 build-essential
 vlc
 ca-certificates
+adwaita-qt
