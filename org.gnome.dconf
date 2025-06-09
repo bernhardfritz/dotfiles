@@ -1,3 +1,6 @@
+[Disks]
+image-dir-uri='file:///home/bernhard/Documents'
+
 [Snapshot]
 is-maximized=false
 window-height=640
@@ -5,6 +8,17 @@ window-width=800
 
 [TextEditor]
 last-save-directory='file:///home/bernhard/Documents/notes'
+
+[Totem]
+active-plugins=['screenshot', 'open-directory', 'apple-trailers', 'autoload-subtitles', 'movie-properties', 'screensaver', 'rotation', 'skipto', 'variable-rate', 'save-file', 'mpris', 'recent', 'vimeo']
+subtitle-encoding='UTF-8'
+
+[boxes]
+first-run=false
+view='icon-view'
+window-maximized=false
+window-position=[22, 49]
+window-size=[1876, 1009]
 
 [calculator]
 accuracy=9
@@ -27,9 +41,14 @@ active-view='month'
 window-maximized=true
 window-size=(524, 600)
 
+[clocks/state/window]
+maximized=false
+panel-id='timer'
+size=(870, 690)
+
 [control-center]
-last-panel='bluetooth'
-window-state=(980, 640, false)
+last-panel='background'
+window-state=(927, 1009, false)
 
 [deja-dup]
 backend='google'
@@ -74,7 +93,13 @@ icon-theme='Yaru'
 show-battery-percentage=true
 
 [desktop/notifications]
-application-children=['gimp-gimp', 'org-gnome-terminal', 'spotify-spotify', 'snapd-desktop-integration-snapd-desktop-integration', 'org-gnome-nautilus', 'org-gnome-terminal-preferences', 'ghostty-ghostty']
+application-children=['gimp-gimp', 'org-gnome-terminal', 'spotify-spotify', 'snapd-desktop-integration-snapd-desktop-integration', 'org-gnome-nautilus', 'org-gnome-terminal-preferences', 'ghostty-ghostty', 'vlc', 'org-gnome-shell-extensions', 'apport-gtk', 'spotify', 'gnome-power-panel', 'org-gnome-diskutility', 'org-gnome-settings', 'firmware-updater-firmware-updater-app', 'gnome-printers-panel', 'org-gnome-eog', 'virtualbox']
+
+[desktop/notifications/application/apport-gtk]
+application-id='apport-gtk.desktop'
+
+[desktop/notifications/application/firmware-updater-firmware-updater-app]
+application-id='firmware-updater_firmware-updater-app.desktop'
 
 [desktop/notifications/application/ghostty-ghostty]
 application-id='ghostty_ghostty.desktop'
@@ -82,8 +107,26 @@ application-id='ghostty_ghostty.desktop'
 [desktop/notifications/application/gimp-gimp]
 application-id='gimp_gimp.desktop'
 
+[desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[desktop/notifications/application/gnome-printers-panel]
+application-id='gnome-printers-panel.desktop'
+
+[desktop/notifications/application/org-gnome-diskutility]
+application-id='org.gnome.DiskUtility.desktop'
+
+[desktop/notifications/application/org-gnome-eog]
+application-id='org.gnome.eog.desktop'
+
 [desktop/notifications/application/org-gnome-nautilus]
 application-id='org.gnome.Nautilus.desktop'
+
+[desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
+[desktop/notifications/application/org-gnome-shell-extensions]
+application-id='org.gnome.Shell.Extensions.desktop'
 
 [desktop/notifications/application/org-gnome-terminal-preferences]
 application-id='org.gnome.Terminal.Preferences.desktop'
@@ -96,6 +139,15 @@ application-id='snapd-desktop-integration_snapd-desktop-integration.desktop'
 
 [desktop/notifications/application/spotify-spotify]
 application-id='spotify_spotify.desktop'
+
+[desktop/notifications/application/spotify]
+application-id='spotify.desktop'
+
+[desktop/notifications/application/virtualbox]
+application-id='virtualbox.desktop'
+
+[desktop/notifications/application/vlc]
+application-id='vlc.desktop'
 
 [desktop/peripherals/touchpad]
 click-method='fingers'
@@ -135,10 +187,36 @@ workspace-names=@as []
 [eog/ui]
 sidebar=false
 
+[evince/default]
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=true
+sidebar-page='links'
+sidebar-size=148
+sizing-mode='automatic'
+window-ratio=(1.0084033613445378, 0.71258907363420432)
+
 [evolution-data-server]
 migrated=true
 
+[file-roller/listing]
+list-mode='as-folder'
+name-column-width=354
+show-path=false
+sort-method='name'
+sort-type='ascending'
+
+[file-roller/ui]
+sidebar-width=200
+window-height=480
+window-width=600
+
 [gnome-system-monitor]
+current-tab='processes'
 show-dependencies=false
 show-whose-processes='user'
 window-height=500
@@ -146,13 +224,19 @@ window-width=700
 
 [gnome-system-monitor/disktreenew]
 col-6-visible=true
-col-6-width=0
+col-6-width=30
 columns-order=[5]
 sort-col=1
 sort-order=0
 
+[gnome-system-monitor/proctree]
+columns-order=[0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26]
+sort-col=8
+sort-order=0
+
 [mutter]
 auto-maximize=false
+center-new-windows=true
 dynamic-workspaces=false
 workspaces-only-on-primary=true
 
@@ -162,14 +246,18 @@ migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [nautilus/window-state]
-initial-size=(890, 550)
+initial-size=(927, 1009)
 maximized=false
+
+[nm-applet/eap/686c2d72-6c52-4b44-9c46-06ddd6479044]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
 
 [portal/filechooser/snap.chromium]
 last-folder-path='/home/bernhard/Downloads/uBlock0_1.64.0.chromium/uBlock0.chromium'
 
 [portal/filechooser/snap.firefox]
-last-folder-path='/home/bernhard/Pictures'
+last-folder-path='/home/bernhard/Downloads/GS305E_V1.0.0.16'
 
 [settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=3600
@@ -177,10 +265,12 @@ sleep-inactive-ac-type='nothing'
 
 [shell]
 disabled-extensions=['tiling-assistant@ubuntu.com', 'ding@rastersoft.com', 'ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com']
-enabled-extensions=['space-bar@luchrioh', 'switcher@landau.fi', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'useless-gaps@pimsnel.com', 'mediacontrols@cliffniff.github.com']
+enabled-extensions=['space-bar@luchrioh', 'switcher@landau.fi', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'dynamic-panel@velhlkj.com', 'useless-gaps@pimsnel.com', 'mediacontrols@cliffniff.github.com']
+last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='46.0'
 
 [shell/extensions/blur-my-shell]
+pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}, 'pipeline_16435062120977': {'name': <'My pipeline'>, 'effects': <[<{'type': <'color'>, 'id': <'effect_31439611688726'>, 'params': <{'color': <(0.0, 0.0, 0.0, 1.0)>}>}>]>}}
 settings-version=2
 
 [shell/extensions/blur-my-shell/appfolder]
@@ -190,9 +280,10 @@ sigma=30
 [shell/extensions/blur-my-shell/applications]
 blur=true
 dynamic-opacity=false
-whitelist=['com.mitchellh.ghostty']
+whitelist=['com.mitchellh.ghostty', 'org.gnome.Nautilus', 'gnome-control-center']
 
 [shell/extensions/blur-my-shell/coverflow-alt-tab]
+blur=true
 pipeline='pipeline_default'
 
 [shell/extensions/blur-my-shell/dash-to-dock]
@@ -203,16 +294,30 @@ sigma=30
 static-blur=true
 style-dash-to-dock=0
 
+[shell/extensions/blur-my-shell/dash-to-panel]
+blur-original-panel=true
+
+[shell/extensions/blur-my-shell/hidetopbar]
+compatibility=false
+
 [shell/extensions/blur-my-shell/lockscreen]
 pipeline='pipeline_default'
 
 [shell/extensions/blur-my-shell/overview]
+blur=true
 pipeline='pipeline_default'
 
 [shell/extensions/blur-my-shell/panel]
+blur=false
 brightness=0.59999999999999998
-pipeline='pipeline_default'
+force-light-text=false
+override-background=true
+override-background-dynamically=true
+pipeline='pipeline_16435062120977'
 sigma=30
+static-blur=true
+style-panel=2
+unblur-in-overview=true
 
 [shell/extensions/blur-my-shell/screenshot]
 pipeline='pipeline_default'
@@ -229,6 +334,26 @@ height-fraction=0.90000000000000002
 hot-keys=false
 preferred-monitor=-2
 preferred-monitor-by-connector='eDP-1'
+
+[shell/extensions/dynamic-panel]
+addon-trigger-center=true
+addon-trigger-left=false
+addon-trigger-right=true
+auto-background=false
+auto-width=false
+background-mode=0
+blur=false
+colors-use-in-static=false
+dark-bg-color='rgb(18,18,18)'
+dark-fg-color='rgb(255,255,255)'
+detection-mode=1
+float-width=99
+radius-times=1
+solid-type=0
+top-margin=10
+transparent=0
+transparent-menus=false
+transparent-menus-keep-alpha=true
 
 [shell/extensions/just-perfection]
 accessibility-menu=true
@@ -252,6 +377,7 @@ support-notifier-showed-version=34
 support-notifier-type=0
 theme=false
 window-demands-attention-focus=false
+window-maximized-on-create=false
 window-picker-icon=true
 window-preview-caption=true
 window-preview-close-button=true
@@ -284,7 +410,7 @@ activate-immediately=false
 fade-enable=false
 font-size=uint32 20
 icon-size=uint32 32
-launcher-stats='{"org.gnome.Calendar.desktop":2,"org.gnome.Logs.desktop":1,"org.gnome.Snapshot.desktop":1,"org.gnome.Calculator.desktop":2,"spotify_spotify.desktop":9,"org.gnome.Settings.desktop":18,"com.mattjakeman.ExtensionManager.desktop":14,"code_code.desktop":4,"firefox_firefox.desktop":5,"org.gnome.Terminal.desktop":55,"snap-store_snap-store.desktop":5,"chromium_chromium.desktop":24,"org.gnome.SystemMonitor.desktop":2,"org.gnome.Nautilus.desktop":15,"ghostty_ghostty.desktop":47,"org.gnome.font-viewer.desktop":1,"nvim_nvim.desktop":2,"vlc_vlc.desktop":2,"vlc.desktop":2}'
+launcher-stats='{"org.gnome.Calendar.desktop":2,"org.gnome.Logs.desktop":1,"org.gnome.Snapshot.desktop":1,"org.gnome.Calculator.desktop":2,"spotify_spotify.desktop":10,"org.gnome.Settings.desktop":25,"com.mattjakeman.ExtensionManager.desktop":31,"code_code.desktop":4,"firefox_firefox.desktop":12,"org.gnome.Terminal.desktop":55,"snap-store_snap-store.desktop":10,"chromium_chromium.desktop":33,"org.gnome.SystemMonitor.desktop":6,"org.gnome.Nautilus.desktop":41,"ghostty_ghostty.desktop":51,"org.gnome.font-viewer.desktop":1,"nvim_nvim.desktop":2,"vlc_vlc.desktop":2,"vlc.desktop":37,"org.gnome.TextEditor.desktop":1,"spotify.desktop":7,"software-properties-drivers.desktop":1,"update-manager.desktop":1,"firmware-updater_firmware-updater.desktop":5,"chrome-pjibgclleladliembfgfagdaldikeohf-Default.desktop":7,"usb-creator-gtk.desktop":1,"gnome-boxes_gnome-boxes.desktop":3,"virtualbox.desktop":1,"celluloid_celluloid.desktop":1}'
 matching=uint32 0
 max-width-percentage=uint32 60
 on-active-display=false
@@ -301,6 +427,7 @@ tiling-popup-all-workspace=true
 
 [shell/extensions/useless-gaps]
 gap-size=44
+margin-top=54
 
 [shell/keybindings]
 switch-to-application-1=@as []
