@@ -1,0 +1,12 @@
+{
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "host-spawn",
+      "args": ["bash"]
+    }
+  },
+  "workbench.colorTheme": "Monokai",
+  "dev.containers.dockerComposePath": "/run/host/usr/bin/docker-compose",
+  "dev.containers.dockerPath": "/run/host/usr/bin/docker"
+}

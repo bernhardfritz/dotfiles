@@ -1,7 +1,0 @@
-code
-discord
-gimp
-ghostty
-nvim
-yazi
-chromium

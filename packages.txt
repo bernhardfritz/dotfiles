@@ -1,12 +1,4 @@
 git
 stow
-gnome-shell-extension-manager
-pipx
-zsh
 curl
-fzf
-ripgrep
-build-essential
-vlc
-ca-certificates
-adwaita-qt
+gnome-weather

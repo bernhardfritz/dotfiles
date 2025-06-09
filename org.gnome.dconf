@@ -1,58 +1,15 @@
-[Disks]
-image-dir-uri='file:///home/bernhard/Documents'
+[GWeather4]
+temperature-unit='centigrade'
 
-[Snapshot]
-is-maximized=false
-window-height=640
-window-width=800
-
-[TextEditor]
-last-save-directory='file:///home/bernhard/Documents/notes'
-
-[Totem]
-active-plugins=['screenshot', 'open-directory', 'apple-trailers', 'autoload-subtitles', 'movie-properties', 'screensaver', 'rotation', 'skipto', 'variable-rate', 'save-file', 'mpris', 'recent', 'vimeo']
-subtitle-encoding='UTF-8'
-
-[boxes]
-first-run=false
-view='icon-view'
+[Weather]
+locations=[<(uint32 2, <('Innsbruck', 'LOWI', true, [(0.82495896559375059, 0.19809487010135637)], [(0.82495896559375059, 0.1989675347273536)])>)>]
+window-height=494
 window-maximized=false
-window-position=[22, 49]
-window-size=[1876, 1009]
-
-[calculator]
-accuracy=9
-angle-units='degrees'
-base=10
-button-mode='basic'
-number-format='automatic'
-show-thousands=false
-show-zeroes=false
-source-currency=''
-source-units='degree'
-target-currency=''
-target-units='radian'
-window-maximized=false
-window-size=(360, 490)
-word-size=64
-
-[calendar]
-active-view='month'
-window-maximized=true
-window-size=(524, 600)
-
-[clocks/state/window]
-maximized=false
-panel-id='timer'
-size=(870, 690)
+window-width=992
 
 [control-center]
-last-panel='background'
-window-state=(927, 1009, false)
-
-[deja-dup]
-backend='google'
-prompt-check='2025-05-23T17:21:05.031105Z'
+last-panel='mouse'
+window-state=(980, 640, false)
 
 [desktop/app-folders]
 folder-children=['Utilities', 'YaST', 'Pardus']
@@ -74,12 +31,8 @@ name='suse-yast.directory'
 translate=true
 
 [desktop/background]
-color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///home/bernhard/.config/background'
-picture-uri-dark='file:///home/bernhard/.config/background'
-primary-color='#000000'
-secondary-color='#000000'
+picture-uri='file:///usr/share/backgrounds/gnome/blobs-l.svg'
+picture-uri-dark='file:///usr/share/backgrounds/gnome/blobs-l.svg'
 
 [desktop/input-sources]
 sources=[('xkb', 'us+mac')]
@@ -87,145 +40,45 @@ xkb-options=@as []
 
 [desktop/interface]
 color-scheme='prefer-dark'
-enable-animations=true
-gtk-theme='Yaru-dark'
-icon-theme='Yaru'
-show-battery-percentage=true
+enable-hot-corners=false
+gtk-theme='adw-gtk3'
+icon-theme='MoreWaita'
+monospace-font-name='Monospace 10'
 
 [desktop/notifications]
-application-children=['gimp-gimp', 'org-gnome-terminal', 'spotify-spotify', 'snapd-desktop-integration-snapd-desktop-integration', 'org-gnome-nautilus', 'org-gnome-terminal-preferences', 'ghostty-ghostty', 'vlc', 'org-gnome-shell-extensions', 'apport-gtk', 'spotify', 'gnome-power-panel', 'org-gnome-diskutility', 'org-gnome-settings', 'firmware-updater-firmware-updater-app', 'gnome-printers-panel', 'org-gnome-eog', 'virtualbox']
+application-children=['org-gnome-software', 'com-spotify-client']
 
-[desktop/notifications/application/apport-gtk]
-application-id='apport-gtk.desktop'
+[desktop/notifications/application/com-spotify-client]
+application-id='com.spotify.Client.desktop'
 
-[desktop/notifications/application/firmware-updater-firmware-updater-app]
-application-id='firmware-updater_firmware-updater-app.desktop'
-
-[desktop/notifications/application/ghostty-ghostty]
-application-id='ghostty_ghostty.desktop'
-
-[desktop/notifications/application/gimp-gimp]
-application-id='gimp_gimp.desktop'
-
-[desktop/notifications/application/gnome-power-panel]
-application-id='gnome-power-panel.desktop'
-
-[desktop/notifications/application/gnome-printers-panel]
-application-id='gnome-printers-panel.desktop'
-
-[desktop/notifications/application/org-gnome-diskutility]
-application-id='org.gnome.DiskUtility.desktop'
-
-[desktop/notifications/application/org-gnome-eog]
-application-id='org.gnome.eog.desktop'
-
-[desktop/notifications/application/org-gnome-nautilus]
-application-id='org.gnome.Nautilus.desktop'
-
-[desktop/notifications/application/org-gnome-settings]
-application-id='org.gnome.Settings.desktop'
-
-[desktop/notifications/application/org-gnome-shell-extensions]
-application-id='org.gnome.Shell.Extensions.desktop'
-
-[desktop/notifications/application/org-gnome-terminal-preferences]
-application-id='org.gnome.Terminal.Preferences.desktop'
-
-[desktop/notifications/application/org-gnome-terminal]
-application-id='org.gnome.Terminal.desktop'
-
-[desktop/notifications/application/snapd-desktop-integration-snapd-desktop-integration]
-application-id='snapd-desktop-integration_snapd-desktop-integration.desktop'
-
-[desktop/notifications/application/spotify-spotify]
-application-id='spotify_spotify.desktop'
-
-[desktop/notifications/application/spotify]
-application-id='spotify.desktop'
-
-[desktop/notifications/application/virtualbox]
-application-id='virtualbox.desktop'
-
-[desktop/notifications/application/vlc]
-application-id='vlc.desktop'
+[desktop/notifications/application/org-gnome-software]
+application-id='org.gnome.Software.desktop'
 
 [desktop/peripherals/touchpad]
-click-method='fingers'
 two-finger-scrolling-enabled=true
 
-[desktop/privacy]
-old-files-age=uint32 30
-recent-files-max-age=-1
-
-[desktop/screensaver]
-color-shading-type='solid'
-picture-options='zoom'
-picture-uri='file:///usr/share/backgrounds/Clouds_by_Tibor_Mokanszki.jpg'
-primary-color='#000000'
-secondary-color='#000000'
-
-[desktop/session]
-idle-delay=uint32 300
-
 [desktop/wm/keybindings]
-maximize=['<Super>Up']
 move-to-workspace-1=['<Shift><Super>1']
 move-to-workspace-2=['<Shift><Super>2']
 move-to-workspace-3=['<Shift><Super>3']
 move-to-workspace-4=['<Shift><Super>4']
-switch-input-source=@as []
-switch-input-source-backward=@as []
 switch-to-workspace-1=['<Super>1']
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-3=['<Super>3']
 switch-to-workspace-4=['<Super>4']
-unmaximize=['<Super>Down']
-
-[desktop/wm/preferences]
-workspace-names=@as []
-
-[eog/ui]
-sidebar=false
-
-[evince/default]
-continuous=true
-dual-page=false
-dual-page-odd-left=false
-enable-spellchecking=true
-fullscreen=false
-inverted-colors=false
-show-sidebar=true
-sidebar-page='links'
-sidebar-size=148
-sizing-mode='automatic'
-window-ratio=(1.0084033613445378, 0.71258907363420432)
 
 [evolution-data-server]
 migrated=true
-
-[file-roller/listing]
-list-mode='as-folder'
-name-column-width=354
-show-path=false
-sort-method='name'
-sort-type='ascending'
-
-[file-roller/ui]
-sidebar-width=200
-window-height=480
-window-width=600
 
 [gnome-system-monitor]
 current-tab='processes'
 show-dependencies=false
 show-whose-processes='user'
-window-height=500
-window-width=700
 
 [gnome-system-monitor/disktreenew]
 col-6-visible=true
-col-6-width=30
-columns-order=[5]
+col-6-width=0
+columns-order=[6]
 sort-col=1
 sort-order=0
 
@@ -235,10 +88,12 @@ sort-col=8
 sort-order=0
 
 [mutter]
-auto-maximize=false
-center-new-windows=true
 dynamic-workspaces=false
-workspaces-only-on-primary=true
+edge-tiling=false
+
+[mutter/keybindings]
+toggle-tiled-left=@as []
+toggle-tiled-right=@as []
 
 [nautilus/preferences]
 default-folder-viewer='list-view'
@@ -246,44 +101,25 @@ migrated-gtk-settings=true
 search-filter-time-type='last_modified'
 
 [nautilus/window-state]
-initial-size=(927, 1009)
-maximized=false
-
-[nm-applet/eap/686c2d72-6c52-4b44-9c46-06ddd6479044]
-ignore-ca-cert=false
-ignore-phase2-ca-cert=false
-
-[portal/filechooser/snap.chromium]
-last-folder-path='/home/bernhard/Downloads/uBlock0_1.64.0.chromium/uBlock0.chromium'
-
-[portal/filechooser/snap.firefox]
-last-folder-path='/home/bernhard/Downloads/GS305E_V1.0.0.16'
+initial-size=(890, 550)
 
 [settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='nothing'
 
 [shell]
-disabled-extensions=['tiling-assistant@ubuntu.com', 'ding@rastersoft.com', 'ubuntu-appindicators@ubuntu.com', 'ubuntu-dock@ubuntu.com']
-enabled-extensions=['space-bar@luchrioh', 'switcher@landau.fi', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'dynamic-panel@velhlkj.com', 'useless-gaps@pimsnel.com', 'mediacontrols@cliffniff.github.com']
-last-selected-power-profile='power-saver'
+command-history=['r']
+enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'blur-my-shell@aunetx']
 welcome-dialog-last-shown-version='46.0'
 
 [shell/extensions/blur-my-shell]
-pipelines={'pipeline_default': {'name': <'Default'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000000'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>]>}, 'pipeline_default_rounded': {'name': <'Default rounded'>, 'effects': <[<{'type': <'native_static_gaussian_blur'>, 'id': <'effect_000000000001'>, 'params': <{'radius': <30>, 'brightness': <0.59999999999999998>}>}>, <{'type': <'corner'>, 'id': <'effect_000000000002'>, 'params': <{'radius': <24>}>}>]>}, 'pipeline_16435062120977': {'name': <'My pipeline'>, 'effects': <[<{'type': <'color'>, 'id': <'effect_31439611688726'>, 'params': <{'color': <(0.0, 0.0, 0.0, 1.0)>}>}>]>}}
 settings-version=2
 
 [shell/extensions/blur-my-shell/appfolder]
 brightness=0.59999999999999998
 sigma=30
 
-[shell/extensions/blur-my-shell/applications]
-blur=true
-dynamic-opacity=false
-whitelist=['com.mitchellh.ghostty', 'org.gnome.Nautilus', 'gnome-control-center']
-
 [shell/extensions/blur-my-shell/coverflow-alt-tab]
-blur=true
 pipeline='pipeline_default'
 
 [shell/extensions/blur-my-shell/dash-to-dock]
@@ -294,30 +130,16 @@ sigma=30
 static-blur=true
 style-dash-to-dock=0
 
-[shell/extensions/blur-my-shell/dash-to-panel]
-blur-original-panel=true
-
-[shell/extensions/blur-my-shell/hidetopbar]
-compatibility=false
-
 [shell/extensions/blur-my-shell/lockscreen]
 pipeline='pipeline_default'
 
 [shell/extensions/blur-my-shell/overview]
-blur=true
 pipeline='pipeline_default'
 
 [shell/extensions/blur-my-shell/panel]
-blur=false
 brightness=0.59999999999999998
-force-light-text=false
-override-background=true
-override-background-dynamically=true
-pipeline='pipeline_16435062120977'
+pipeline='pipeline_default'
 sigma=30
-static-blur=true
-style-panel=2
-unblur-in-overview=true
 
 [shell/extensions/blur-my-shell/screenshot]
 pipeline='pipeline_default'
@@ -326,119 +148,85 @@ pipeline='pipeline_default'
 brightness=0.59999999999999998
 sigma=30
 
-[shell/extensions/dash-to-dock]
-background-opacity=0.80000000000000004
-dash-max-icon-size=48
-dock-position='LEFT'
-height-fraction=0.90000000000000002
-hot-keys=false
-preferred-monitor=-2
-preferred-monitor-by-connector='eDP-1'
-
-[shell/extensions/dynamic-panel]
-addon-trigger-center=true
-addon-trigger-left=false
-addon-trigger-right=true
-auto-background=false
-auto-width=false
-background-mode=0
-blur=false
-colors-use-in-static=false
-dark-bg-color='rgb(18,18,18)'
-dark-fg-color='rgb(255,255,255)'
-detection-mode=1
-float-width=99
-radius-times=1
-solid-type=0
-top-margin=10
-transparent=0
-transparent-menus=false
-transparent-menus-keep-alpha=true
-
-[shell/extensions/just-perfection]
-accessibility-menu=true
-activities-button=true
-animation=2
-background-menu=true
-controls-manager-spacing-size=0
-dash=true
-dash-icon-size=0
-double-super-to-appgrid=true
-max-displayed-search-results=0
-osd=true
-overlay-key=false
-panel=true
-panel-in-overview=true
-ripple-box=true
-search=true
-show-apps-button=true
-startup-status=0
-support-notifier-showed-version=34
-support-notifier-type=0
-theme=false
-window-demands-attention-focus=false
-window-maximized-on-create=false
-window-picker-icon=true
-window-preview-caption=true
-window-preview-close-button=true
-workspace=true
-workspace-background-corner-size=0
-workspace-peek=true
-workspace-popup=false
-workspace-switcher-should-show=false
-workspace-thumbnail-to-main-view=false
-workspace-wrap-around=false
-workspaces-in-app-grid=true
-
-[shell/extensions/mediacontrols]
-extension-position='Right'
-show-control-icons-seek-backward=false
-show-control-icons-seek-forward=false
-
-[shell/extensions/space-bar/appearance]
-application-styles='.space-bar {\n  -natural-hpadding: 12px;\n}\n\n.space-bar-workspace-label.active {\n  margin: 0 4px;\n  background-color: rgba(255,255,255,0.3);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,1);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}\n\n.space-bar-workspace-label.inactive.empty {\n  margin: 0 4px;\n  background-color: rgba(0,0,0,0);\n  color: rgba(255,255,255,0.5);\n  border-color: rgba(0,0,0,0);\n  font-weight: 700;\n  border-radius: 4px;\n  border-width: 0px;\n  padding: 3px 8px;\n}'
-
-[shell/extensions/space-bar/behavior]
-toggle-overview=false
-
-[shell/extensions/space-bar/state]
-version=33
-
-[shell/extensions/switcher]
-activate-by-key=uint32 2
-activate-immediately=false
-fade-enable=false
-font-size=uint32 20
-icon-size=uint32 32
-launcher-stats='{"org.gnome.Calendar.desktop":2,"org.gnome.Logs.desktop":1,"org.gnome.Snapshot.desktop":1,"org.gnome.Calculator.desktop":2,"spotify_spotify.desktop":10,"org.gnome.Settings.desktop":25,"com.mattjakeman.ExtensionManager.desktop":31,"code_code.desktop":4,"firefox_firefox.desktop":12,"org.gnome.Terminal.desktop":55,"snap-store_snap-store.desktop":10,"chromium_chromium.desktop":33,"org.gnome.SystemMonitor.desktop":6,"org.gnome.Nautilus.desktop":41,"ghostty_ghostty.desktop":51,"org.gnome.font-viewer.desktop":1,"nvim_nvim.desktop":2,"vlc_vlc.desktop":2,"vlc.desktop":37,"org.gnome.TextEditor.desktop":1,"spotify.desktop":7,"software-properties-drivers.desktop":1,"update-manager.desktop":1,"firmware-updater_firmware-updater.desktop":5,"chrome-pjibgclleladliembfgfagdaldikeohf-Default.desktop":7,"usb-creator-gtk.desktop":1,"gnome-boxes_gnome-boxes.desktop":3,"virtualbox.desktop":1,"celluloid_celluloid.desktop":1}'
-matching=uint32 0
-max-width-percentage=uint32 60
-on-active-display=false
-only-current-workspace=false
-show-executables=false
-show-original-names=false
-show-switcher=['<Super>space']
-workspace-indicator=true
-
 [shell/extensions/tiling-assistant]
 active-window-hint-color='rgb(211,70,21)'
 last-version-installed=46
+overridden-settings={'org.gnome.mutter.edge-tiling': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-left': <@mb nothing>, 'org.gnome.mutter.keybindings.toggle-tiled-right': <@mb nothing>}
 tiling-popup-all-workspace=true
-
-[shell/extensions/useless-gaps]
-gap-size=44
-margin-top=54
 
 [shell/keybindings]
 switch-to-application-1=@as []
 switch-to-application-2=@as []
 switch-to-application-3=@as []
 switch-to-application-4=@as []
-switch-to-application-5=@as []
-switch-to-application-6=@as []
-switch-to-application-7=@as []
-switch-to-application-8=@as []
-switch-to-application-9=@as []
+
+[shell/weather]
+automatic-location=true
+locations=[<(uint32 2, <('Innsbruck', 'LOWI', true, [(0.82495896559375059, 0.19809487010135637)], [(0.82495896559375059, 0.1989675347273536)])>)>]
 
 [shell/world-clocks]
 locations=@av []
+
+[software]
+check-timestamp=int64 1749475299
+flatpak-purge-timestamp=int64 1749485333
+
+[terminal/legacy/profiles:]
+default='95894cfd-82f7-430d-af6e-84d168bc34f5'
+list=['b1dcc9dd-5262-4d8d-a863-c897e6d979b9', 'de8a9081-8352-4ce4-9519-5de655ad9361', '71a9971e-e829-43a9-9b2f-4565c855d664', '5083e06b-024e-46be-9cd2-892b814f1fc8', '95894cfd-82f7-430d-af6e-84d168bc34f5']
+
+[terminal/legacy/profiles:/:5083e06b-024e-46be-9cd2-892b814f1fc8]
+background-color='#24273a'
+bold-is-bright=true
+cursor-background-color='#f4dbd6'
+cursor-colors-set=true
+cursor-foreground-color='#24273a'
+foreground-color='#cad3f5'
+highlight-background-color='#f4dbd6'
+highlight-colors-set=true
+highlight-foreground-color='#5b6078'
+palette=['#494d64', '#ed8796', '#a6da95', '#eed49f', '#8aadf4', '#f5bde6', '#8bd5ca', '#a5adcb', '#5b6078', '#ec7486', '#8ccf7f', '#e1c682', '#78a1f6', '#f2a9dd', '#63cbc0', '#b8c0e0']
+use-theme-colors=false
+visible-name='Catppuccin Macchiato'
+
+[terminal/legacy/profiles:/:71a9971e-e829-43a9-9b2f-4565c855d664]
+background-color='#303446'
+bold-is-bright=true
+cursor-background-color='#f2d5cf'
+cursor-colors-set=true
+cursor-foreground-color='#303446'
+foreground-color='#c6d0f5'
+highlight-background-color='#f2d5cf'
+highlight-colors-set=true
+highlight-foreground-color='#626880'
+palette=['#51576d', '#e78284', '#a6d189', '#e5c890', '#8caaee', '#f4b8e4', '#81c8be', '#a5adce', '#626880', '#e67172', '#8ec772', '#d9ba73', '#7b9ef0', '#f2a4db', '#5abfb5', '#b5bfe2']
+use-theme-colors=false
+visible-name='Catppuccin Frappe'
+
+[terminal/legacy/profiles:/:95894cfd-82f7-430d-af6e-84d168bc34f5]
+background-color='#1e1e2e'
+bold-is-bright=true
+cursor-background-color='#f5e0dc'
+cursor-colors-set=true
+cursor-foreground-color='#1e1e2e'
+foreground-color='#cdd6f4'
+highlight-background-color='#f5e0dc'
+highlight-colors-set=true
+highlight-foreground-color='#585b70'
+palette=['#45475a', '#f38ba8', '#a6e3a1', '#f9e2af', '#89b4fa', '#f5c2e7', '#94e2d5', '#a6adc8', '#585b70', '#f37799', '#89d88b', '#ebd391', '#74a8fc', '#f2aede', '#6bd7ca', '#bac2de']
+use-theme-colors=false
+visible-name='Catppuccin Mocha'
+
+[terminal/legacy/profiles:/:de8a9081-8352-4ce4-9519-5de655ad9361]
+background-color='#eff1f5'
+bold-is-bright=true
+cursor-background-color='#dc8a78'
+cursor-colors-set=true
+cursor-foreground-color='#eff1f5'
+foreground-color='#4c4f69'
+highlight-background-color='#dc8a78'
+highlight-colors-set=true
+highlight-foreground-color='#acb0be'
+palette=['#5c5f77', '#d20f39', '#40a02b', '#df8e1d', '#1e66f5', '#ea76cb', '#179299', '#acb0be', '#6c6f85', '#de293e', '#49af3d', '#eea02d', '#456eff', '#fe85d8', '#2d9fa8', '#bcc0cc']
+use-theme-colors=false
+visible-name='Catppuccin Latte'
