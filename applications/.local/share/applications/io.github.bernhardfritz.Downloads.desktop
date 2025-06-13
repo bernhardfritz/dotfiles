@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Downloads
+Comment=Access Downloads folder
+Keywords=folder;manager;explore;disk;filesystem;
+Exec=nautilus Downloads
+Icon=folder-download
+Terminal=false
+Type=Application

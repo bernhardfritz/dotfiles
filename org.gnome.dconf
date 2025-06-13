@@ -8,7 +8,7 @@ window-maximized=false
 window-width=992
 
 [control-center]
-last-panel='mouse'
+last-panel='multitasking'
 window-state=(980, 640, false)
 
 [desktop/app-folders]
@@ -46,16 +46,26 @@ icon-theme='MoreWaita'
 monospace-font-name='Monospace 10'
 
 [desktop/notifications]
-application-children=['org-gnome-software', 'com-spotify-client']
+application-children=['org-gnome-software', 'com-spotify-client', 'org-gimp-gimp']
 
 [desktop/notifications/application/com-spotify-client]
 application-id='com.spotify.Client.desktop'
+
+[desktop/notifications/application/org-gimp-gimp]
+application-id='org.gimp.GIMP.desktop'
 
 [desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
 
 [desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
+
+[desktop/privacy]
+old-files-age=uint32 30
+recent-files-max-age=-1
+
+[desktop/session]
+idle-delay=uint32 300
 
 [desktop/wm/keybindings]
 move-to-workspace-1=['<Shift><Super>1']
@@ -66,6 +76,9 @@ switch-to-workspace-1=['<Super>1']
 switch-to-workspace-2=['<Super>2']
 switch-to-workspace-3=['<Super>3']
 switch-to-workspace-4=['<Super>4']
+
+[desktop/wm/preferences]
+button-layout='appmenu:minimize,maximize,close'
 
 [evolution-data-server]
 migrated=true
@@ -103,13 +116,18 @@ search-filter-time-type='last_modified'
 [nautilus/window-state]
 initial-size=(890, 550)
 
+[portal/filechooser/com.google.Chrome]
+last-folder-path='/home/bernhard/Downloads'
+
 [settings-daemon/plugins/power]
 sleep-inactive-ac-timeout=3600
 sleep-inactive-ac-type='nothing'
 
 [shell]
+app-picker-layout=[{'software-properties-drivers.desktop': <{'position': <0>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.eog.desktop': <{'position': <4>}>, 'gnome-language-selector.desktop': <{'position': <5>}>, 'io.neovim.nvim.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'org.gnome.PowerStats.desktop': <{'position': <8>}>, 'software-properties-gtk.desktop': <{'position': <9>}>, 'update-manager.desktop': <{'position': <10>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <11>}>, 'gnome-session-properties.desktop': <{'position': <12>}>, 'Utilities': <{'position': <13>}>, 'info.desktop': <{'position': <14>}>, 'yelp.desktop': <{'position': <15>}>, 'com.visualstudio.code.desktop': <{'position': <16>}>, 'org.videolan.VLC.desktop': <{'position': <17>}>, 'org.gnome.Software.desktop': <{'position': <18>}>}]
 command-history=['r']
-enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'blur-my-shell@aunetx']
+enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'com.google.Chrome.desktop', 'com.visualstudio.code.desktop', 'org.gimp.GIMP.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.TextEditor.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'io.github.bernhardfritz.Downloads.desktop']
 welcome-dialog-last-shown-version='46.0'
 
 [shell/extensions/blur-my-shell]
@@ -148,6 +166,19 @@ pipeline='pipeline_default'
 brightness=0.59999999999999998
 sigma=30
 
+[shell/extensions/dash-to-dock]
+background-opacity=0.80000000000000004
+dash-max-icon-size=48
+disable-overview-on-startup=true
+dock-position='BOTTOM'
+height-fraction=0.90000000000000002
+hot-keys=false
+preferred-monitor=-2
+preferred-monitor-by-connector='eDP-1'
+show-apps-always-in-the-edge=true
+show-apps-at-top=false
+show-show-apps-button=false
+
 [shell/extensions/tiling-assistant]
 active-window-hint-color='rgb(211,70,21)'
 last-version-installed=46
@@ -168,8 +199,9 @@ locations=[<(uint32 2, <('Innsbruck', 'LOWI', true, [(0.82495896559375059, 0.198
 locations=@av []
 
 [software]
-check-timestamp=int64 1749475299
-flatpak-purge-timestamp=int64 1749485333
+check-timestamp=int64 1749838675
+flatpak-purge-timestamp=int64 1749603841
+security-timestamp=int64 1749761360519618
 
 [terminal/legacy/profiles:]
 default='95894cfd-82f7-430d-af6e-84d168bc34f5'
@@ -209,11 +241,13 @@ bold-is-bright=true
 cursor-background-color='#f5e0dc'
 cursor-colors-set=true
 cursor-foreground-color='#1e1e2e'
+font='MesloLGS NF 12'
 foreground-color='#cdd6f4'
 highlight-background-color='#f5e0dc'
 highlight-colors-set=true
 highlight-foreground-color='#585b70'
 palette=['#45475a', '#f38ba8', '#a6e3a1', '#f9e2af', '#89b4fa', '#f5c2e7', '#94e2d5', '#a6adc8', '#585b70', '#f37799', '#89d88b', '#ebd391', '#74a8fc', '#f2aede', '#6bd7ca', '#bac2de']
+use-system-font=false
 use-theme-colors=false
 visible-name='Catppuccin Mocha'
 

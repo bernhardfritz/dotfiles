@@ -1,1 +1,2 @@
 blur-my-shell@aunetx
+dash-to-dock@micxgx.gmail.com

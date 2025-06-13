@@ -3,3 +3,4 @@ com.visualstudio.code
 com.spotify.Client
 io.neovim.nvim
 org.videolan.VLC
+org.gimp.GIMP
