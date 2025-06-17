@@ -8,5 +8,10 @@
   },
   "workbench.colorTheme": "Monokai",
   "dev.containers.dockerComposePath": "/run/host/usr/bin/docker-compose",
-  "dev.containers.dockerPath": "/run/host/usr/bin/docker"
+  "dev.containers.dockerPath": "/run/host/usr/bin/docker",
+  "vscode-neovim.neovimExecutablePaths.linux": "/var/data/nvim-linux-x86_64.appimage/usr/bin/nvim",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.lineNumbers": "relative",
 }

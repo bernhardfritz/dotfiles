@@ -86,3 +86,11 @@ readarray -t vscode_extensions < vscode-extensions.txt
 for vscode_extension in "${vscode_extensions[@]}"; do
   code --install-extension "$vscode_extension"
 done
+
+# Download and extract neovim appimage for use in flatpak'ed vscode extension asvetliakov.vscode-neovim
+# NOTE: This step will be obsolete once ubuntu package repository provides a neovim version greater than 0.10.0
+curl -LO https://github.com/neovim/neovim/releases/latest/download/nvim-linux-x86_64.appimage
+chmod u+x nvim-linux-x86_64.appimage
+./nvim-linux-x86_64.appimage --appimage-extract
+sudo mv ./squashfs-root ~/.var/app/com.visualstudio.code/data/nvim-linux-x86_64.appimage
+rm ./nvim-linux-x86_64.appimage
