@@ -2,3 +2,4 @@ git
 stow
 curl
 gnome-weather
+hexchat
