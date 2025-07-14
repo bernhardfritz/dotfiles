@@ -7,6 +7,22 @@ window-height=494
 window-maximized=false
 window-width=992
 
+[calculator]
+accuracy=9
+angle-units='degrees'
+base=10
+button-mode='basic'
+number-format='automatic'
+show-thousands=false
+show-zeroes=false
+source-currency=''
+source-units='degree'
+target-currency=''
+target-units='radian'
+window-maximized=false
+window-size=(360, 490)
+word-size=64
+
 [control-center]
 last-panel='keyboard'
 window-state=(980, 640, false)
@@ -36,7 +52,7 @@ picture-uri-dark='file:///usr/share/backgrounds/gnome/blobs-l.svg'
 
 [desktop/input-sources]
 sources=[('xkb', 'us+mac')]
-xkb-options=@as []
+xkb-options=['caps:swapescape']
 
 [desktop/interface]
 color-scheme='prefer-dark'
@@ -47,13 +63,22 @@ monospace-font-name='Monospace 10'
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['org-gnome-software', 'org-gimp-gimp', 'org-gnome-nautilus', 'com-google-chrome', 'gnome-power-panel']
+application-children=['org-gnome-software', 'org-gimp-gimp', 'org-gnome-nautilus', 'com-google-chrome', 'gnome-power-panel', 'com-spotify-client', 'gnome-printers-panel', 'com-mattjakeman-extensionmanager']
 
 [desktop/notifications/application/com-google-chrome]
 application-id='com.google.Chrome.desktop'
 
+[desktop/notifications/application/com-mattjakeman-extensionmanager]
+application-id='com.mattjakeman.ExtensionManager.desktop'
+
+[desktop/notifications/application/com-spotify-client]
+application-id='com.spotify.Client.desktop'
+
 [desktop/notifications/application/gnome-power-panel]
 application-id='gnome-power-panel.desktop'
+
+[desktop/notifications/application/gnome-printers-panel]
+application-id='gnome-printers-panel.desktop'
 
 [desktop/notifications/application/org-gimp-gimp]
 application-id='org.gimp.GIMP.desktop'
@@ -90,6 +115,19 @@ unmaximize=@as []
 
 [desktop/wm/preferences]
 button-layout='appmenu:minimize,maximize,close'
+
+[evince/default]
+continuous=true
+dual-page=false
+dual-page-odd-left=false
+enable-spellchecking=true
+fullscreen=false
+inverted-colors=false
+show-sidebar=true
+sidebar-page='thumbnails'
+sidebar-size=132
+sizing-mode='automatic'
+window-ratio=(1.008313539192399, 0.71260504201680674)
 
 [evolution-data-server]
 migrated=true
@@ -129,7 +167,7 @@ search-filter-time-type='last_modified'
 initial-size=(890, 550)
 
 [portal/filechooser/com.google.Chrome]
-last-folder-path='/home/bernhard/Downloads/uBlock0_1.64.0.chromium/uBlock0.chromium'
+last-folder-path='/home/bernhard/Downloads'
 
 [portal/filechooser/io.github.bernhardfritz.Downloads]
 last-folder-path='/home/bernhard/Downloads'
@@ -145,8 +183,8 @@ sleep-inactive-ac-type='nothing'
 app-picker-layout=[{'software-properties-drivers.desktop': <{'position': <0>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.eog.desktop': <{'position': <4>}>, 'gnome-language-selector.desktop': <{'position': <5>}>, 'io.neovim.nvim.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'org.gnome.PowerStats.desktop': <{'position': <8>}>, 'software-properties-gtk.desktop': <{'position': <9>}>, 'update-manager.desktop': <{'position': <10>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <11>}>, 'gnome-session-properties.desktop': <{'position': <12>}>, 'Utilities': <{'position': <13>}>, 'info.desktop': <{'position': <14>}>, 'yelp.desktop': <{'position': <15>}>, 'com.visualstudio.code.desktop': <{'position': <16>}>, 'org.videolan.VLC.desktop': <{'position': <17>}>, 'org.gnome.Software.desktop': <{'position': <18>}>}]
 command-history=['r']
 disabled-extensions=@as []
-enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'search-light@icedman.github.com', 'tiling-assistant@ubuntu.com', 'dash2dock-lite@icedman.github.com']
-favorite-apps=['org.gnome.Nautilus.desktop', 'com.google.Chrome.desktop', 'com.visualstudio.code.desktop', 'org.gimp.GIMP.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.TextEditor.desktop', 'com.google.Chrome.flextop.chrome-pjibgclleladliembfgfagdaldikeohf-Default.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'io.github.bernhardfritz.Downloads.desktop']
+enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'tiling-assistant@ubuntu.com', 'dash2dock-lite@icedman.github.com', 'search-light@icedman.github.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'com.google.Chrome.desktop', 'com.visualstudio.code.desktop', 'org.gimp.GIMP.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.TextEditor.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'io.github.bernhardfritz.Downloads.desktop']
 last-selected-power-profile='power-saver'
 welcome-dialog-last-shown-version='46.0'
 
@@ -270,9 +308,11 @@ locations=[<(uint32 2, <('Innsbruck', 'LOWI', true, [(0.82495896559375059, 0.198
 locations=@av []
 
 [software]
-check-timestamp=int64 1750782269
-flatpak-purge-timestamp=int64 1750789401
+check-timestamp=int64 1752507597
+flatpak-purge-timestamp=int64 1752354493
+install-timestamp=int64 1750800015
 security-timestamp=int64 1749761360519618
+update-notification-timestamp=int64 1750807425
 
 [terminal/legacy/profiles:]
 default='95894cfd-82f7-430d-af6e-84d168bc34f5'
