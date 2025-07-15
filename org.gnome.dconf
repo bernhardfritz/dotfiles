@@ -57,7 +57,7 @@ xkb-options=['caps:swapescape']
 [desktop/interface]
 color-scheme='prefer-dark'
 enable-hot-corners=false
-gtk-theme='adw-gtk3'
+gtk-theme='Adwaita-dark'
 icon-theme='MoreWaita'
 monospace-font-name='Monospace 10'
 toolkit-accessibility=false
@@ -186,6 +186,7 @@ disabled-extensions=@as []
 enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'tiling-assistant@ubuntu.com', 'dash2dock-lite@icedman.github.com', 'search-light@icedman.github.com']
 favorite-apps=['org.gnome.Nautilus.desktop', 'com.google.Chrome.desktop', 'com.visualstudio.code.desktop', 'org.gimp.GIMP.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.TextEditor.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'io.github.bernhardfritz.Downloads.desktop']
 last-selected-power-profile='power-saver'
+remember-mount-password=false
 welcome-dialog-last-shown-version='46.0'
 
 [shell/extensions/blur-my-shell]
@@ -308,8 +309,8 @@ locations=[<(uint32 2, <('Innsbruck', 'LOWI', true, [(0.82495896559375059, 0.198
 locations=@av []
 
 [software]
-check-timestamp=int64 1752507597
-flatpak-purge-timestamp=int64 1752354493
+check-timestamp=int64 1752597607
+flatpak-purge-timestamp=int64 1752514721
 install-timestamp=int64 1750800015
 security-timestamp=int64 1749761360519618
 update-notification-timestamp=int64 1750807425
