@@ -24,7 +24,7 @@ window-size=(360, 490)
 word-size=64
 
 [control-center]
-last-panel='keyboard'
+last-panel='network'
 window-state=(980, 640, false)
 
 [desktop/app-folders]
@@ -63,7 +63,7 @@ monospace-font-name='Monospace 10'
 toolkit-accessibility=false
 
 [desktop/notifications]
-application-children=['org-gnome-software', 'org-gimp-gimp', 'org-gnome-nautilus', 'com-google-chrome', 'gnome-power-panel', 'com-spotify-client', 'gnome-printers-panel', 'com-mattjakeman-extensionmanager']
+application-children=['org-gnome-software', 'org-gimp-gimp', 'org-gnome-nautilus', 'com-google-chrome', 'gnome-power-panel', 'com-spotify-client', 'gnome-printers-panel', 'com-mattjakeman-extensionmanager', 'org-gnome-terminal-preferences']
 
 [desktop/notifications/application/com-google-chrome]
 application-id='com.google.Chrome.desktop'
@@ -88,6 +88,9 @@ application-id='org.gnome.Nautilus.desktop'
 
 [desktop/notifications/application/org-gnome-software]
 application-id='org.gnome.Software.desktop'
+
+[desktop/notifications/application/org-gnome-terminal-preferences]
+application-id='org.gnome.Terminal.Preferences.desktop'
 
 [desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
@@ -125,7 +128,7 @@ fullscreen=false
 inverted-colors=false
 show-sidebar=true
 sidebar-page='thumbnails'
-sidebar-size=132
+sidebar-size=148
 sizing-mode='automatic'
 window-ratio=(1.008313539192399, 0.71260504201680674)
 
@@ -182,6 +185,7 @@ sleep-inactive-ac-type='nothing'
 [shell]
 app-picker-layout=[{'software-properties-drivers.desktop': <{'position': <0>}>, 'com.mattjakeman.ExtensionManager.desktop': <{'position': <1>}>, 'org.gnome.Weather.desktop': <{'position': <2>}>, 'org.gnome.clocks.desktop': <{'position': <3>}>, 'org.gnome.eog.desktop': <{'position': <4>}>, 'gnome-language-selector.desktop': <{'position': <5>}>, 'io.neovim.nvim.desktop': <{'position': <6>}>, 'nvidia-settings.desktop': <{'position': <7>}>, 'org.gnome.PowerStats.desktop': <{'position': <8>}>, 'software-properties-gtk.desktop': <{'position': <9>}>, 'update-manager.desktop': <{'position': <10>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <11>}>, 'gnome-session-properties.desktop': <{'position': <12>}>, 'Utilities': <{'position': <13>}>, 'info.desktop': <{'position': <14>}>, 'yelp.desktop': <{'position': <15>}>, 'com.visualstudio.code.desktop': <{'position': <16>}>, 'org.videolan.VLC.desktop': <{'position': <17>}>, 'org.gnome.Software.desktop': <{'position': <18>}>}]
 command-history=['r']
+disable-user-extensions=false
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'tiling-assistant@ubuntu.com', 'dash2dock-lite@icedman.github.com', 'search-light@icedman.github.com']
 favorite-apps=['org.gnome.Nautilus.desktop', 'com.google.Chrome.desktop', 'com.visualstudio.code.desktop', 'org.gimp.GIMP.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.TextEditor.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'io.github.bernhardfritz.Downloads.desktop']
@@ -309,11 +313,11 @@ locations=[<(uint32 2, <('Innsbruck', 'LOWI', true, [(0.82495896559375059, 0.198
 locations=@av []
 
 [software]
-check-timestamp=int64 1752597607
-flatpak-purge-timestamp=int64 1752514721
-install-timestamp=int64 1750800015
-security-timestamp=int64 1749761360519618
-update-notification-timestamp=int64 1750807425
+check-timestamp=int64 1757349003
+flatpak-purge-timestamp=int64 1756577751
+install-timestamp=int64 1757349266
+security-timestamp=int64 1753007227833238
+update-notification-timestamp=int64 1757349814
 
 [terminal/legacy/profiles:]
 default='95894cfd-82f7-430d-af6e-84d168bc34f5'
