@@ -14,5 +14,16 @@
     "asvetliakov.vscode-neovim": 1
   },
   "editor.lineNumbers": "relative",
-  "keyboard.dispatch": "keyCode"
+  "keyboard.dispatch": "keyCode",
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
 }
