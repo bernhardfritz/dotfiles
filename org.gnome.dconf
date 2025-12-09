@@ -24,7 +24,7 @@ window-size=(360, 490)
 word-size=64
 
 [control-center]
-last-panel='network'
+last-panel='display'
 window-state=(980, 640, false)
 
 [desktop/app-folders]
@@ -188,7 +188,7 @@ command-history=['r']
 disable-user-extensions=false
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'tiling-assistant@ubuntu.com', 'dash2dock-lite@icedman.github.com', 'search-light@icedman.github.com']
-favorite-apps=['org.gnome.Nautilus.desktop', 'com.google.Chrome.desktop', 'com.visualstudio.code.desktop', 'org.gimp.GIMP.desktop', 'org.gnome.Terminal.desktop', 'org.gnome.TextEditor.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'io.github.bernhardfritz.Downloads.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'com.google.Chrome.desktop', 'com.visualstudio.code.desktop', 'org.gimp.GIMP.desktop', 'org.wezfurlong.wezterm.desktop', 'org.gnome.TextEditor.desktop', 'md.obsidian.Obsidian.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'io.github.bernhardfritz.Downloads.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=false
 welcome-dialog-last-shown-version='46.0'
@@ -313,10 +313,10 @@ locations=[<(uint32 2, <('Innsbruck', 'LOWI', true, [(0.82495896559375059, 0.198
 locations=@av []
 
 [software]
-check-timestamp=int64 1757349003
-flatpak-purge-timestamp=int64 1756577751
+check-timestamp=int64 1765304999
+flatpak-purge-timestamp=int64 1764874507
 install-timestamp=int64 1757349266
-security-timestamp=int64 1753007227833238
+security-timestamp=int64 1763397384664464
 update-notification-timestamp=int64 1757349814
 
 [terminal/legacy/profiles:]

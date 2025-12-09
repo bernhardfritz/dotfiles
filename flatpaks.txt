@@ -4,3 +4,6 @@ com.spotify.Client
 io.neovim.nvim
 org.videolan.VLC
 org.gimp.GIMP
+md.obsidian.Obsidian
+org.wezfurlong.wezterm
+runtime/org.freedesktop.Sdk/x86_64/23.08
