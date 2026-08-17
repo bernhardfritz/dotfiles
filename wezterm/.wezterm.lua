@@ -23,6 +23,7 @@ config.window_padding = {
   bottom = 0,
 }
 config.font = wezterm.font 'MesloLGS NF'
+config.window_background_opacity = 0.85
 
 -- Finally, return the configuration to wezterm:
 return config
