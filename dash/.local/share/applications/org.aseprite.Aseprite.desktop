@@ -1,0 +1,6 @@
+[Desktop Entry]
+Name=Aseprite
+Exec=/home/bernhard/Applications/aseprite-release/bin/aseprite
+Icon=/home/bernhard/Applications/aseprite-release/bin/data/icons/ase.ico
+Terminal=false
+Type=Application

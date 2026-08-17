@@ -92,6 +92,26 @@ application-id='org.gnome.Software.desktop'
 [desktop/notifications/application/org-gnome-terminal-preferences]
 application-id='org.gnome.Terminal.Preferences.desktop'
 
+[desktop/peripherals/stylus/default-256c:006e]
+button-action='default'
+eraser-pressure-curve=[0, 0, 100, 100]
+pressure-curve=[0, 0, 100, 100]
+
+[desktop/peripherals/tablets/256c:006e]
+left-handed=true
+
+[desktop/peripherals/tablets/256c:006e/buttonA]
+action='keybinding'
+keybinding='i'
+
+[desktop/peripherals/tablets/256c:006e/buttonB]
+action='keybinding'
+keybinding='e'
+
+[desktop/peripherals/tablets/256c:006e/buttonC]
+action='keybinding'
+keybinding='b'
+
 [desktop/peripherals/touchpad]
 two-finger-scrolling-enabled=true
 
@@ -188,7 +208,7 @@ command-history=['r']
 disable-user-extensions=false
 disabled-extensions=@as []
 enabled-extensions=['ubuntu-appindicators@ubuntu.com', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'tiling-assistant@ubuntu.com', 'dash2dock-lite@icedman.github.com', 'search-light@icedman.github.com']
-favorite-apps=['org.gnome.Nautilus.desktop', 'com.google.Chrome.desktop', 'com.visualstudio.code.desktop', 'org.gimp.GIMP.desktop', 'org.wezfurlong.wezterm.desktop', 'org.gnome.TextEditor.desktop', 'md.obsidian.Obsidian.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'io.github.bernhardfritz.Downloads.desktop']
+favorite-apps=['org.gnome.Nautilus.desktop', 'com.google.Chrome.desktop', 'com.visualstudio.code.desktop', 'org.gimp.GIMP.desktop', 'org.aseprite.Aseprite.desktop', 'org.wezfurlong.wezterm.desktop', 'org.gnome.TextEditor.desktop', 'md.obsidian.Obsidian.desktop', 'com.spotify.Client.desktop', 'org.gnome.Software.desktop', 'org.gnome.Settings.desktop', 'io.github.bernhardfritz.Downloads.desktop']
 last-selected-power-profile='power-saver'
 remember-mount-password=false
 welcome-dialog-last-shown-version='46.0'
